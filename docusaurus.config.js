@@ -2,13 +2,13 @@ const path = require('path');
 const versions = require('./versions.json');
 
 module.exports = {
-  title: 'React Navigation',
-  tagline: 'Routing and navigation for your React Native apps',
-  url: 'https://reactnavigation.org/',
+  title: 'mapie.io',
+  tagline: 'Making developers life simpler',
+  url: 'https://mapie.io/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'react-navigation',
-  projectName: 'react-navigation.github.io',
+  organizationName: 'morfsys',
+  projectName: 'morfsys.github.io',
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
@@ -26,19 +26,19 @@ module.exports = {
     algolia: {
       apiKey: '2378e3838ac984c220a994bfc0e0420f',
       indexName: 'react-navigation',
-      algoliaOptions: {}
+      algoliaOptions: {},
     },
     navbar: {
-      title: 'React Navigation',
+      title: 'mapie.io',
       logo: {
-        alt: 'React Navigation Logo',
+        alt: 'mapie.io Logo',
         src: 'img/spiro.svg',
       },
       links: [
         { to: 'docs/getting-started', label: 'Docs', position: 'left' },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        // { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/react-navigation',
+          href: 'https://github.com/morfsys',
           label: 'GitHub',
           position: 'right',
         },

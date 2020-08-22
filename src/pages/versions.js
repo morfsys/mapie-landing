@@ -10,15 +10,16 @@ import versions from '../../versions.json';
 
 function Version() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   const latestVersion = versions[0];
-  const pastVersions = versions.filter(version => version !== latestVersion);
+  const pastVersions = versions.filter((version) => version !== latestVersion);
   const repoUrl = `https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;
 
   return (
     <Layout
       permalink="/versions"
-      description="React Navigation Versions page listing all documented site versions">
+      description="React Navigation Versions page listing all documented site versions"
+    >
       <div className="container margin-vert--xl">
         <h1>React Navigation documentation versions</h1>
         <div className="margin-bottom--lg">
@@ -37,7 +38,7 @@ function Version() {
             </tbody>
           </table>
         </div>
-        {pastVersions.length > 0 && (
+        {/* {pastVersions.length > 0 && (
           <div className="margin-bottom--lg">
             <h3 id="archive">Past Versions</h3>
             <p>
@@ -59,7 +60,7 @@ function Version() {
               </tbody>
             </table>
           </div>
-        )}
+        )} */}
       </div>
     </Layout>
   );

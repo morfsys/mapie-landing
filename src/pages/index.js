@@ -9,37 +9,20 @@ import sponsors from '../data/sponsors';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    description: (
-      <>
-        Start quickly with built-in navigators that deliver a seamless
-        out-of-the-box experience.
-      </>
-    ),
+    title: <>Feature 1</>,
+    description: <>Lorem ipsum dolor sit</>,
   },
   {
-    title: <>Components built for iOS and Android</>,
-    description: (
-      <>Platform-specific look-and-feel with smooth animations and gestures.</>
-    ),
+    title: <>Feature 2</>,
+    description: <>Lorem ipsum dolor sit</>,
   },
   {
-    title: <>Completely customizable</>,
-    description: (
-      <>
-        If you know how to write apps using JavaScript you can customize any
-        part of React Navigation.
-      </>
-    ),
+    title: <>Feature 3</>,
+    description: <>Lorem ipsum dolor sit</>,
   },
   {
-    title: <>Extensible platform</>,
-    description: (
-      <>
-        React Navigation is extensible at every layer— you can write your own
-        navigators or even replace the user-facing API.
-      </>
-    ),
+    title: <>Feature 4</>,
+    description: <>Lorem ipsum dolor sit</>,
   },
 ];
 
@@ -48,18 +31,6 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
-      <div className={styles.blm}>
-        Black Lives Matter.{' '}
-        <a
-          target="_blank"
-          rel="noopener"
-          rel="noreferrer"
-          href="https://support.eji.org/give/153413/#!/donation/checkout"
-        >
-          Support the Equal Justice Initiative
-        </a>
-        .
-      </div>
       <header className="hero text--center">
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -76,7 +47,7 @@ function Home() {
               Read docs
             </Link>
 
-            <Link
+            {/* <Link
               className={classnames(
                 'button button--secondary button--outline button--lg',
                 styles.heroButton
@@ -86,10 +57,10 @@ function Home() {
               }
             >
               Try the demo app
-            </Link>
+            </Link> */}
           </div>
 
-          <div style={{ marginTop: 30, opacity: 0.8 }}>
+          {/* <div style={{ marginTop: 30, opacity: 0.8 }}>
             💡 Coming from v4? Check out our{' '}
             <Link
               to={useBaseUrl('/docs/upgrading-from-4.x')}
@@ -98,7 +69,7 @@ function Home() {
               v4 to v5 migration guide
             </Link>
             .
-          </div>
+          </div> */}
         </div>
       </header>
 
@@ -116,7 +87,7 @@ function Home() {
           </div>
         </section>
       )}
-      <section className={styles.sponsoredBanner}>
+      {/* <section className={styles.sponsoredBanner}>
         React Navigation is built and funded by{' '}
         <a href="https://expo.io" style={{ fontWeight: 'bold' }}>
           Expo
@@ -174,7 +145,7 @@ function Home() {
             supporting the project by sponsoring it 💜
           </a>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }
