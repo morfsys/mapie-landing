@@ -4,7 +4,7 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This page will help you start with mapie CLI and develop and run your Mapie Server.
+This page will help you start with Mapie CLI and develop and run your Mapie Server.
 
 ## Pre-requisites
 
@@ -23,16 +23,18 @@ Install the CLI Engine by running the following command:
 npm install -g mapie-cli
 ```
 
-mapie CLI provides you with all the utilities to start & run your Mapie Server and also some generators for quick and focused development.
+Mapie CLI provides you with all the utilities to start & run your Mapie Server and also some generators for quick and focused development.
 
-Once the `mapie-cli` is successfully installed, you can check the mapie version that is installed in your system by following:
+Once the `mapie-cli` is successfully installed, you can check the Mapie version that is installed in your system by following:
 
 ```sh
 pie version
 ```
 
+You will see something like this:
+
 ```sh
-> v 1.0.0
+$ v1.0.0
 ```
 
 ## Mapie Server
