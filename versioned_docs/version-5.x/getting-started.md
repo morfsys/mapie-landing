@@ -4,11 +4,11 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This page will help you start with Mapie CLI and develop and run your Mapie Server.
+This page will help you start with mapie CLI and develop and run your Mapie Server.
 
 ## Pre-requisites
 
-Having a basic understanding of Javascript, ExpressJS features like Express App, Routing, Middlewares can help you get moving through your Mapie Server quickly. If not, we highly recommend you to gain some basic knowledge first, then come back here when you're done.
+Having a basic understanding of Javascript, ExpressJS features like Express App, Routing, Middlewares can help you get moving through your Mapie Server quickly. If not, I highly recommend you to gain some basic knowledge and then come back here whenever feel comfortable.
 
 Here are some resources to help you out:
 
@@ -18,18 +18,22 @@ Here are some resources to help you out:
 ## Installation
 
 Install the CLI Engine by running the following command:
+
 ```bash
 npm install -g mapie-cli
 ```
-Mapie CLI provides provides you with all the utilities to start and run with your Mapie server and also some generators for quick and focused development.
 
-Once the `mapie-cli` is successful, you can check the mapie version that is installed in your system by following:
+mapie CLI provides you with all the utilities to start & run your Mapie Server and also some generators for quick and focused development.
+
+Once the `mapie-cli` is successfully installed, you can check the mapie version that is installed in your system by following:
 
 ```sh
 pie version
 ```
 
-> Note: we might need a terminal interface here to show how exactly it will look like
+```sh
+> v 1.0.0
+```
 
 ## Mapie Server
 
@@ -40,21 +44,21 @@ Now that we have the CLI up and running, let's dive into getting the Mapie Serve
 In your target directory, run:
 
 ```sh
-pie create myMapieServer
+pie create hello-world
 ```
 
-After successful execution, you will have a project created for you in the `myMapieServer/` directory
+After successful execution, you will have a project created for you in the `hello-world/` directory
 
 ### Run your Mapie Server
 
 ```sh
 
-cd myMapieServer
+cd hello-world
 pie run
 
 ```
 
-This will run your server on the default port `3712` and you can browse through the development Resource Map on `localhost:3712/mapie`
+This will run your server on the default port `3712` and you can browse through the development resource map on `localhost:3712/__mapie`
 
 > Note: Make sure to set the field `production` to `true` in the `./bootstrap.js` file before deploying on the production
 
